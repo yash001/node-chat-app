@@ -20,16 +20,24 @@ socket.emit('newEmail', {
 	createAt: 123
 });
 
+/*
 socket.emit('newMessage', {
  from: 'John',
  text: 'See you then',
  createAt: 12312	
 	
 });	
-	
+*/
+
 socket.on('createMessage',(message) => {
   console.log('createMessage',message);	
+  io.emit('newMessage', {
+     from: message.from,
+ 	 text: message.text,
+	 createdAt: new Date().getTime()
+  });
 });	
+	
 
 socket.on('disconnect', () => {
 console.log('Disconnected from server');
