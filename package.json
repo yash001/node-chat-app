@@ -14,13 +14,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "moment": "^2.15.1",
-    "nodemon": "^1.10.2",
-    "socket.io": "^1.4.8"
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "nodemon": "^1.18.11",
+    "socket.io": "^1.4.8",
+    "test": "^0.6.0"
   },
   "devDependencies": {
     "expect": "^1.20.2",
-    "mocha": "^3.0.2"
+    "mocha": "^6.1.3"
   }
 }
